@@ -131,6 +131,13 @@ body {
   -webkit-animation: up 1.5s infinite;
 }
 
+/* Logo */
+
+.logo{
+  height: 70px;
+  width: 70px
+}
+
 
 /*
 ---------------------------------------
