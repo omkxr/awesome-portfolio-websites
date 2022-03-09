@@ -709,39 +709,31 @@ Rotate Transition in foote Soical Icon
   }
 }
 
-
-/* twitter SVG micro animation */
+/* Twitter SVG micro animation */
 
 .twitter-icon-footer {
-  margin-bottom: 6px;
   width: 35px;
 }
-
 
 /* linkedin SVG micro animation */
 
 .linkedin-icon-footer {
-  margin-bottom: 8px;
   width: 30px;
+  margin-left: 10px;
 }
-
 
 /* instagram SVG micro animation */
 
 .instagram-icon-footer {
-  width: 70px;
-  padding-right: 24px;
-  padding-bottom: 8px;
+  width: 55px;
 }
-
 
 /* github SVG Micro animation */
 
 .github-icon-footer {
-  margin-bottom: 8px;
   width: 35px;
+  margin-bottom: 6px;
 }
-
 
 /*
 ----------------------------------------
