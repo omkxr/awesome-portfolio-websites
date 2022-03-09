@@ -735,6 +735,11 @@ Rotate Transition in foote Soical Icon
   margin-bottom: 6px;
 }
 
+/* Logo in dark mode */
+html[light-mode="light"] .logo{
+  filter: invert(70%);
+}
+
 /*
 ----------------------------------------
  HOVER EFFECT ON SOCIAL MEDIA ICONS
