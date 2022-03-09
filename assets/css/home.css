@@ -147,6 +147,11 @@ html[light-mode="dark"] .socialicon{
   background-color: #141516;
 }
 
+/* Logo in dark mode */
+html[light-mode="light"] .logo{
+  filter: invert(70%);
+}
+
 .kaggle i {
   margin: auto;
   font-size: 24px;
