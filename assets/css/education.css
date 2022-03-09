@@ -515,6 +515,10 @@ header p {
 
 }
 
+.timelineHeading{
+  margin-right: 79px;
+}
+
 .timeline-img-header {
   height: 200px;
   position: relative;
