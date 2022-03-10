@@ -44,6 +44,7 @@ var cursor = {
     });
 
     document.addEventListener("mousemove", function (e) {
+      
       // Show the cursor
       self.cursorVisible = true;
       self.toggleCursorVisibility();

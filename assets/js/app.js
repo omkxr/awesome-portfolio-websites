@@ -1,4 +1,3 @@
-
 "use strict";
 
 // Header
@@ -191,6 +190,7 @@ let footer = $(`
 `);
 
 //"Scroll to top" button
+
 let upArrow = $(`
   <button id="btnScrollToTop" onclick="scrollToTop()"><i class="fas fa-2x fa-angle-up"></i></button>
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
@@ -198,22 +198,17 @@ let upArrow = $(`
 `);
 
 $(document).ready(function () {
-  // updating the color of the swiper bullets (initial update of color)
   updateColorOfSwiperBullets(localStorage.getItem("lightMode"));
 
-  //function for the "Scroll To Top" button to detect the footer
   $(window).scroll(function () {
-    //The button will be hidden until we scroll more than the window's height
     if ($(window).scrollTop() < $(window).height()) {
       $("#btnScrollToTop").css("visibility", "hidden");
     } else {
       $("#btnScrollToTop").css("visibility", "visible");
-      //The button will change it's color when it hits the footer
       if (
         $(window).scrollTop() + $(window).height() >
         $(document).height() - 838
       ) {
-        // 838 should be changed if footer's height is changed so that the button changes it's color exactly when it hits the footer (preferably 14 less than the computer height of the footer)
         $("#btnScrollToTop").css("background-color", "#6a00bb");
       } else {
         $("#btnScrollToTop").css("background-color", "#6a00bb");
@@ -223,6 +218,7 @@ $(document).ready(function () {
 });
 
 //function to scroll to top
+
 const scrollToTop = () => {
   window.scrollTo({
     top: 0,
@@ -232,6 +228,7 @@ const scrollToTop = () => {
 };
 
 // Window Loads
+
 $(function () {
   let bodyElement = $(`body`);
   bodyElement.prepend(header);
@@ -240,6 +237,7 @@ $(function () {
   $("#btnScrollToTop").css("visibility", "hidden");
 
   //toggler hamburger functions
+
   const menuBtn = document.querySelector(".navbar-toggler");
   let menuOpen = false;
   menuBtn.addEventListener("click", () => {
@@ -294,11 +292,13 @@ $(document).ready(function () {
 });
 
 //consistent light mode for page change
+
 if (localStorage.getItem("lightMode") == "light") {
   var app = document.getElementsByTagName("HTML")[0];
   app.setAttribute("light-mode", "light");
 
   //to add dark theme to nav bar after its been loaded
+
   window.addEventListener("load", function () {
     var nav = document.getElementById("navbar");
     nav.classList.remove("dark-theme");
@@ -336,10 +336,12 @@ function toggle_light_mode() {
   }
 
   // updating the swiper bullets
+
   updateColorOfSwiperBullets(localStorage.getItem("lightMode"));
 }
 
 // function to update swiper bullets
+
 function updateColorOfSwiperBullets(lightMode) {
   document.querySelectorAll(".swiper-pagination-bullet").forEach((bullet) => {
     if (lightMode == "light") {
@@ -359,6 +361,7 @@ window.addEventListener("storage", function () {
 });
 
 // Function to remove scroll bar during preload
+
 $(window).on("load", function () {
   setTimeout(function () {
     $(".no-scroll-preload").css("overflow", "visible");
@@ -368,32 +371,26 @@ $(window).on("load", function () {
 
 //send button animation
 
-
 $(function submitAnimation() {
-  const name = document.querySelector("#name")
-  const emailAdress = document.querySelector("#email")
-  const text = document.querySelector("#textArea")
-  const emailPattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+  const name = document.querySelector("#name");
+  const emailAdress = document.querySelector("#email");
+  const text = document.querySelector("#textArea");
+  const emailPattern =
+    /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
 
   $("#lnch").on("click", function () {
-
-    // Check if the name field is empty or contains a number
-    if (name.value == "" || (/\d/.test(name.value))) {
-      alert('Please enter a valid name');
+    if (name.value == "" || /\d/.test(name.value)) {
+      alert("Please enter a valid name");
       return;
     }
-    // Check if the email field is empty or email is not valid ex: test@@email.com
-    else if (emailAdress.value == "" || !(emailPattern.test(emailAdress.value))) {
-      alert('Please enter a valid email');
+    else if (emailAdress.value == "" || !emailPattern.test(emailAdress.value)) {
+      alert("Please enter a valid email");
       return;
     }
-    // Check if the message field is empty
     else if (text.value == "") {
-      alert('Please enter your message');
+      alert("Please enter your message");
       return;
-    }
-    else {
-
+    } else {
       setTimeout(function () {
         $("#lnch").addClass("launching").text("Sending");
         $("#lnch_btn").addClass("launching");
@@ -402,9 +399,8 @@ $(function submitAnimation() {
         $("#lnch").addClass("launched").text("SENT");
         $("#lnch_btn").addClass("launched");
       }, 1500);
-      // Wait for 2.2 seconds so that the send button animation can be fully played before submitting the form
       setTimeout(() => {
-        document.querySelector('form').submit();
+        document.querySelector("form").submit();
       }, 2200);
     }
   });

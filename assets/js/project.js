@@ -44,7 +44,7 @@ const projects = [
     title: "Screw'd OS",
     cardImage: "assets/images/project-page/screwd.png",
     description: "Developer, Maintainer",
-    Previewlink: "https://forum.xda-developers.com/t/rom-7-0-0_r19-screwd-aosp-3-0-beta-builds-16-11-16.3355582/",
+    Previewlink:"https://forum.xda-developers.com/t/rom-7-0-0_r19-screwd-aosp-3-0-beta-builds-16-11-16.3355582/",
     Githublink: "https://github.com/omkxr",
   },
   {
@@ -71,6 +71,7 @@ const projects = [
 ];
 
 // function for rendering project cards data
+
 const showCards = () => {
   let output = "";
   projects.forEach(({ title, cardImage, Previewlink, Githublink }) => {
@@ -98,7 +99,6 @@ const showCards = () => {
 document.addEventListener("DOMContentLoaded", showCards);
 
 function myFunction() {
-  // Declare variables
   var input, button, i, skillcard, card, title;
   input = document.getElementById("myInput").value;
   input = input.toUpperCase();
@@ -107,6 +107,7 @@ function myFunction() {
   title = document.getElementsByClassName("title");
 
   // Loop through all list items, and hide those who don't match the search query
+
   for (i = 0; i < button.length; i++) {
     if (
       button[i].innerHTML.toUpperCase().includes(input) ||

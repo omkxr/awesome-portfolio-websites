@@ -19,11 +19,13 @@ html[data-theme="dark"] {
   --text: rgba(255, 255, 255, 0.5);
   --neu-icon: whitesmoke;
 }
+
 html {
   overflow-x: hidden;
   max-width: 120%;
   height: auto;
 }
+
 body {
   color: var(--text);
   background-color: var(--bg);
@@ -54,7 +56,6 @@ body {
 
 .light-mode-button:focus {
   outline: none;
-  /* Not ideal for accessibility */
 }
 
 .light-mode-button span:nth-child(1) {
@@ -398,7 +399,6 @@ ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* margin: 1rem auto; */
 }
 
 /* Responsive*/

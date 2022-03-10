@@ -57,20 +57,17 @@ const volunteershipcards = [
   {
     title: "Lineage OS / CyanogenMod",
     cardImage: "assets/images/experience-page/lineage.png",
-    description:
-      "CM 14 bringup for Moto X, CM 13 Contributor for Moto X",
+    description: "CM 14 bringup for Moto X, CM 13 Contributor for Moto X",
   },
   {
     title: "Paranoid Andorid / AOSPA",
     cardImage: "assets/images/experience-page/pa.png",
-    description:
-      "Moto X Device Maintainer for Paranoid Android",
+    description: "Moto X Device Maintainer for Paranoid Android",
   },
   {
     title: "Screw'd OS",
     cardImage: "assets/images/experience-page/screwd.png",
-    description:
-      "Developer, Device Maintainer for Nexus 5x and Honor View 10",
+    description: "Developer, Device Maintainer for Nexus 5x and Honor View 10",
   },
   {
     title: "Honor Open Source Project",
