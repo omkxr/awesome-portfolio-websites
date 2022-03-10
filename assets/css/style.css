@@ -622,12 +622,6 @@ Rotate Transition in foote Soical Icon
   }
 }
 
-/* Twitter SVG micro animation */
-
-.twitter-icon-footer {
-  width: 35px;
-}
-
 /* linkedin SVG micro animation */
 
 .linkedin-icon-footer {
@@ -635,17 +629,19 @@ Rotate Transition in foote Soical Icon
   margin-left: 10px;
 }
 
-/* instagram SVG micro animation */
-
-.instagram-icon-footer {
-  width: 55px;
-}
 
 /* github SVG Micro animation */
 
 .github-icon-footer {
   width: 35px;
   margin-bottom: 6px;
+}
+
+.rounded-social-buttons .social-button.xda{
+  fill: #ffff;
+  margin-right: 30px;
+  background: #2b2a2A;
+  box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
 }
 
 /* Logo in dark mode */
@@ -659,17 +655,6 @@ html[light-mode="light"] .logo{
 ----------------------------------------
 */
 
-.rounded-social-buttons .social-button.twitter {
-  background: #2b2a2A;
-  box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
-}
-
-.rounded-social-buttons .social-button.twitter:hover,
-.rounded-social-buttons .social-button.twitter:focus {
-  color: #000;
-  background: #2b2a2A;
-}
-
 .rounded-social-buttons .social-button.linkedin {
   background: #2b2a2A;
   box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
@@ -681,16 +666,6 @@ html[light-mode="light"] .logo{
   background: #2b2a2A;
 }
 
-.rounded-social-buttons .social-button.instagram {
-  background: #2b2a2A;
-  box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
-}
-
-.rounded-social-buttons .social-button.instagram:hover,
-.rounded-social-buttons .social-button.instagram:focus {
-  color: #000;
-  background: #2b2a2A;
-}
 
 .rounded-social-buttons .social-button.github {
   fill: #ffff;
