@@ -151,6 +151,14 @@ a:hover {
   margin-bottom: 2rem;
 }
 
+.pt-5, .py-5 {
+  padding-top: 5rem!important;
+}
+
+.mt-5, .my-5 {
+  padding-bottom: 8rem!important;
+}
+
 @media (min-width: 60rem) {
   .row {
     margin-top: 0em;
