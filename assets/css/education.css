@@ -300,8 +300,24 @@ header p {
 
 .timeline-item:nth-child(even) .timeline-content {
   float: right;
-  padding: 40px 30px 10px 30px;
 }
+
+.timelineHeading {
+  margin-top: 45px;
+}
+
+.timelineHeading2 {
+  margin-top: 25px;
+}
+
+.timelineHeading3 {
+  margin-top: 5px;
+}
+
+.timelineHeading4 {
+  margin-top: 30px;
+}
+
 .timeline-item:nth-child(even) .timeline-content .alignment {
   position: absolute;
   text-align: left;
