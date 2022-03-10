@@ -135,9 +135,14 @@ body {
 
 .logo{
   height: 70px;
-  width: 70px
+  width: 70px;
 }
 
+
+.xda-icon{
+  height: 65px;
+  width: 80px;
+}
 
 /*
 ---------------------------------------
