@@ -21,8 +21,6 @@ html[data-theme="light"] {
   --col-bd-icon: transparent;
   --bg-icon: #fff;
   --col-icon-linkedin: #0e76a8;
-  --col-icon-mail: rgb(209, 82, 82);
-  --col-icon-google-scholar: #3cba54;
   --shadow-col: rgba(0, 0, 0, 0.3);
 }
 
@@ -43,8 +41,6 @@ html[data-theme="dark"] {
   --col-box-shadow-hover: inset rgba(255, 255, 255, 1) 2px 2px 4px, inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
   --col-icon-linkedin: #0e76a8;
   --col-icon-github: #24292e;
-  --col-icon-mail: rgb(209, 82, 82);
-  --col-icon-google-scholar: #3cba54;
   --col-white: #fff;
 }
 
