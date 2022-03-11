@@ -612,7 +612,7 @@ html[light-mode="light"] .navbar-brand:hover {
 
 .linkedin-icon-footer {
   width: 30px;
-  margin-left: 10px;
+  margin-bottom: 8px;
 }
 
 /* github SVG Micro animation */
@@ -620,13 +620,6 @@ html[light-mode="light"] .navbar-brand:hover {
 .github-icon-footer {
   width: 35px;
   margin-bottom: 6px;
-}
-
-.rounded-social-buttons .social-button.xda {
-  fill: #ffff;
-  margin-right: 20px;
-  background: #2b2a2a;
-  box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
 }
 
 /* Logo in dark mode */
@@ -662,6 +655,11 @@ html[light-mode="light"] .logo {
 .rounded-social-buttons .social-button.github:focus {
   color: #000000;
   background: #2b2a2a;
+}
+
+.rounded-social-buttons .social-button.xda {
+  background: #2b2a2a;
+  box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
 }
 
 /************
